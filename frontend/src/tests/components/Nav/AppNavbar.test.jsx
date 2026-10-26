@@ -193,6 +193,30 @@ describe("AppNavbar tests", () => {
     expect(link.getAttribute("href")).toBe("/restaurants");
   });
 
+  test("renders the dining commons menu items link correctly", async () => {
+    const currentUser = currentUserFixtures.userOnly;
+    const systemInfo = systemInfoFixtures.showingBoth;
+
+    const doLogin = vi.fn();
+
+    render(
+      <QueryClientProvider client={queryClient}>
+        <MemoryRouter>
+          <AppNavbar
+            currentUser={currentUser}
+            systemInfo={systemInfo}
+            doLogin={doLogin}
+          />
+        </MemoryRouter>
+      </QueryClientProvider>,
+    );
+
+    await screen.findByText("Dining Commons Menu Items");
+    const link = screen.getByText("Dining Commons Menu Items");
+    expect(link).toBeInTheDocument();
+    expect(link.getAttribute("href")).toBe("/diningcommonsmenuitem");
+  });
+
   test("Restaurant and UCSBDates links do NOT show when not logged in", async () => {
     const currentUser = null;
     const systemInfo = systemInfoFixtures.showingBoth;
@@ -212,6 +236,9 @@ describe("AppNavbar tests", () => {
 
     expect(screen.queryByText("Restaurants")).not.toBeInTheDocument();
     expect(screen.queryByText("UCSBDates")).not.toBeInTheDocument();
+    expect(
+      screen.queryByText("Dining Commons Menu Items"),
+    ).not.toBeInTheDocument();
   });
 
   test("when oauthlogin undefined, default value is used", async () => {
