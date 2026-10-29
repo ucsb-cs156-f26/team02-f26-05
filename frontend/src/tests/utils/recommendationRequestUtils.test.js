@@ -15,6 +15,24 @@ vi.mock("react-toastify", async (importOriginal) => {
 
 describe("recommendationRequestUtils", () => {
   describe("onDeleteSuccess", () => {
+    test("It extracts the message from a JSON response object", () => {
+      // arrange
+      const restoreConsole = mockConsole();
+
+      // act
+      onDeleteSuccess({ message: "RecommendationRequest with id 1 deleted" });
+
+      // assert
+      expect(mockToast).toHaveBeenCalledWith(
+        "RecommendationRequest with id 1 deleted",
+      );
+      expect(console.log).toHaveBeenCalledWith(
+        "RecommendationRequest with id 1 deleted",
+      );
+
+      restoreConsole();
+    });
+
     test("It puts the message on console.log and in a toast", () => {
       // arrange
       const restoreConsole = mockConsole();
