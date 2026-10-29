@@ -15,6 +15,21 @@ vi.mock("react-toastify", async (importOriginal) => {
 
 describe("ucsbOrganizationUtils", () => {
   describe("onDeleteSuccess", () => {
+    test("It extracts the message from a JSON response object", () => {
+      const restoreConsole = mockConsole();
+
+      onDeleteSuccess({ message: "UCSBOrganization with id SKY deleted" });
+
+      expect(mockToast).toHaveBeenCalledWith(
+        "UCSBOrganization with id SKY deleted",
+      );
+      expect(console.log).toHaveBeenCalledWith(
+        "UCSBOrganization with id SKY deleted",
+      );
+
+      restoreConsole();
+    });
+
     test("It puts the message on console.log and in a toast", () => {
       const restoreConsole = mockConsole();
 
