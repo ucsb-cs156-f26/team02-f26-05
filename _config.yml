@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156-f26/team02-f26-05
 owner: ucsb-cs156-f26
 repo_name: team02-f26-05
-pull_requests: [{"author":{"id":"U_kgDOEjc3tA","is_bot":false,"login":"jstp06","name":""},"headRefName":"jstp06-MenuItemReview-edit","number":220,"title":"Edit Page for MenuItemReview plus tests and stories","url":"https://github.com/ucsb-cs156-f26/team02-f26-05/pull/220"},{"author":{"id":"U_kgDOEjc3tA","is_bot":false,"login":"jstp06","name":""},"headRefName":"jstp06-MenuItemReview-create","number":218,"title":" Create Page for MenuItemReview plus tests and stories","url":"https://github.com/ucsb-cs156-f26/team02-f26-05/pull/218"}]
+pull_requests: [{"author":{"id":"U_kgDOEjc3tA","is_bot":false,"login":"jstp06","name":""},"headRefName":"jstp06-MenuItemReview-edit","number":220,"title":"Edit Page for MenuItemReview plus tests and stories","url":"https://github.com/ucsb-cs156-f26/team02-f26-05/pull/220"}]
