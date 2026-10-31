@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156-f26/team02-f26-05
 owner: ucsb-cs156-f26
 repo_name: team02-f26-05
-pull_requests: [{"author":{"id":"U_kgDOBaYReg","is_bot":false,"login":"mintoku","name":"Jovia Low"},"headRefName":"jovia-jpa04","number":225,"title":"Jovia jpa04","url":"https://github.com/ucsb-cs156-f26/team02-f26-05/pull/225"}]
+pull_requests: [{"author":{"id":"U_kgDOBaYReg","is_bot":false,"login":"mintoku","name":"Jovia Low"},"headRefName":"jovia-int-test","number":228,"title":"Jovia int test","url":"https://github.com/ucsb-cs156-f26/team02-f26-05/pull/228"},{"author":{"id":"U_kgDOBaYReg","is_bot":false,"login":"mintoku","name":"Jovia Low"},"headRefName":"jovia-jpa04","number":225,"title":"Jovia jpa04","url":"https://github.com/ucsb-cs156-f26/team02-f26-05/pull/225"}]
